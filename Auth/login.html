@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Assets/CSS/main.css">
+    <title>Login</title>
+ <style>
+    body {
+      background: #f8f9fa;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 80px auto;
+      padding: 30px;
+      background-color: rgb(235, 235, 235);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #e90dfd;
+    }
+    .btn-primary {
+      background-color: #0b2cc0;
+      border-color: #ffffff;
+    }
+    .btn-primary:hover {
+      background-color: #870bc0;
+      border-color: #f8f8f8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="login-container">
+        <img src="../Assets/img/logo_Ghub_trans.png" alt="Logo" class="img-fluid mb-4" style="width: 100px; display: block; margin: 0 auto;">
+      <h3 class="text-center mb-4">Login</h3>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password" required />
+        </div>
+        <!-- This is remember me  -->
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="rememberMe" />
+          <label class="form-check-label" for="rememberMe">Remember me</label>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+      </form>
+      <p class="text-center mt-3">
+        Don't have an account? <a href="../Auth/register.html">Register</a>
+      </p>
+    </div>
+  </div>
+<script src="../Assets/JS/main.js"></script>
+</html>
