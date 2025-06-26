@@ -1,249 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>xGHUB</title>
-    <!-- <base href="/xGHUB/" /> -->
-    <!-- Bootstrap 5 CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>xGHUB - Home</title>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./Assets/CSS/main.css" />
-    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="Assets/CSS/main.css" />
+  <link rel="stylesheet" href="Assets/CSS/style.css" />
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      background: #121212;
+      color: #eee;
+      font-family: 'Orbitron', sans-serif;
+    }
+    nav.navbar {
+      padding-top: 0.3rem;
+      padding-bottom: 0.3rem;
+      min-height: 56px;
+    }
+    nav.navbar img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+    .navbar-brand,
+    .navbar-nav {
+      align-items: center;
+      display: flex;
+    }
+  </style>
 </head>
-
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a href="index.html" class="navbar-brand">
+      <img src="Assets/Img/Logo_Ghub_trans.png" alt="Logo" />
+    </a>
 
-    <!-- Navbar Placeholder -->
-    <style>
-        /* Fix navbar height */
-        nav.navbar {
-            padding-top: 0.3rem;
-            padding-bottom: 0.3rem;
-            min-height: 56px;
-        }
-
-        /* Logo image size - limit height to keep navbar slim */
-        nav.navbar img {
-            height: 40px;
-            /* Limit height */
-            width: auto;
-            /* Keep aspect ratio */
-            display: block;
-        }
-
-        /* Center navbar content vertically */
-        .navbar-brand,
-        .navbar-nav {
-            align-items: center;
-            display: flex;
-        }
-    </style>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-        <a href="index.html" class="navbar-brand">
-            <img src="./Assets/Img/Logo_Ghub_trans.png" alt="Logo" />
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./Page/gamespage.html">Games</a></li>
-                <li class="nav-item"><a class="nav-link" href="./Page/categories_page.html">Categories</a></li>
-                <li class="nav-item"><a class="nav-link" href="./Page/leaderboard_page.html">Leaderboard</a></li>
-                <li class="nav-item"><a class="nav-link" href="./Auth/login.html">Login</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <div class="container mt-5">
-        <h2 class="text-center mb-5 fw-bold text-light">🔥 Trending Online Games</h2>
-        <div class="row g-4">
-            <div class="col-12 col-sm-6 col-md-4">
-                <a href="game-shooter.html" class="card-link text-decoration-none">
-                    <div class="card game-card h-100">
-                        <img src="https://placehold.co/400x200/1abc9c/ffffff?text=Shooter+Game"
-                            class="card-img-top img-fluid" alt="Shooter Game" />
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Shooter Arena</h5>
-                            <div class="btn btn-primary btn-play">Play</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-                <a href="game-racing.html" class="card-link text-decoration-none">
-                    <div class="card game-card h-100">
-                        <img src="https://placehold.co/400x200/e74c3c/ffffff?text=Racing+Game"
-                            class="card-img-top img-fluid" alt="Racing Game" />
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Speed Legends</h5>
-                            <div class="btn btn-primary btn-play">Play</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4">
-                <a href="game-adventure.html" class="card-link text-decoration-none">
-                    <div class="card game-card h-100">
-                        <img src="https://placehold.co/400x200/3498db/ffffff?text=Adventure+Game"
-                            class="card-img-top img-fluid" alt="Adventure Game" />
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Epic Quest</h5>
-                            <div class="btn btn-primary btn-play">Play</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4">
-                <a href="game-strategy.html" class="card-link text-decoration-none">
-                    <div class="card game-card h-100">
-                        <img src="https://placehold.co/400x200/f1c40f/ffffff?text=Strategy+Game"
-                            class="card-img-top img-fluid" alt="Strategy Game" />
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Battle Tactics</h5>
-                            <div class="btn btn-primary btn-play">Play</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4">
-                <a href="game-puzzle.html" class="card-link text-decoration-none">
-                    <div class="card game-card h-100">
-                        <img src="https://placehold.co/400x200/9b59b6/ffffff?text=Puzzle+Game"
-                            class="card-img-top img-fluid" alt="Puzzle Game" />
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Brain Twister</h5>
-                            <div class="btn btn-primary btn-play">Play</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer Placeholder -->
-    <footer class="pt-4 pb-3 mt-5" id="footer">
-        <div class="container">
-            <div class="row text-center text-md-start">
-
-                <!-- About -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="text-uppercase fw-bold">xGHUB</h5>
-                    <p>Play the best online games across all genres. Discover, compete, and have fun!</p>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="text-uppercase fw-bold">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-decoration-none text-reset">Home</a></li>
-                        <li><a href="games.html" class="text-decoration-none text-reset">Games</a></li>
-                        <li><a href="Page/categories.html" class="text-decoration-none text-reset">Categories</a></li>
-                        <li><a href="contact.html" class="text-decoration-none text-reset">Contact</a></li>
-                    </ul>
-                </div>
-
-                <!-- Newsletter & Theme Toggle -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="text-uppercase fw-bold">Stay Updated</h5>
-                    <form onsubmit="event.preventDefault(); alert('Subscribed!');">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Your email" required />
-                            <button class="btn btn-primary" type="submit">Subscribe</button>
-                        </div>
-                    </form>
-                    <button class="btn btn-sm btn-outline-secondary" onclick="toggleTheme()">Toggle Theme</button>
-                </div>
-
-            </div>
-
-            <hr class="mt-3" />
-
-            <div class="text-center small">
-                <p class="mb-0">&copy; 2025 xGHUB. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating Chat Button -->
-    <button onclick="alert('How can we help you?')"
-        class="btn btn-primary position-fixed bottom-0 end-0 m-4 shadow rounded-circle"
-        style="width: 56px; height: 56px;">
-        <i class="bi bi-chat-dots-fill"></i>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Cookie Consent Banner -->
-    <div id="cookie-banner"
-        class="position-fixed bottom-0 start-0 end-0 bg-dark text-white p-3 d-flex justify-content-between align-items-center"
-        style="display: none; z-index: 1050;">
-        <span>We use cookies to improve your experience.</span>
-        <button class="btn btn-sm btn-light" onclick="acceptCookies()">Accept</button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="Page/gamespage.html">Games</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="Page/categories_page.html">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Page/leaderboard_page.html">Leaderboard</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="Auth/login.html">Login</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Theme & Cookie Script -->
-    <script>
-        // Load Theme
-        const savedTheme = localStorage.getItem("site-theme");
-        if (savedTheme === "light") setTheme("light");
-        else setTheme("dark");
+  <div class="container mt-5">
+    <h2 class="text-center mb-5 fw-bold">🔥 Trending Online Games</h2>
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-md-4">
+        <a href="Page/game-shooter.html" class="card-link text-decoration-none">
+          <div class="card game-card h-100">
+            <img
+              src="https://placehold.co/400x200/1abc9c/ffffff?text=Shooter+Game"
+              class="card-img-top img-fluid"
+              alt="Shooter Game"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Shooter Arena</h5>
+              <div class="btn btn-primary btn-play">Play</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <a href="Page/game-racing.html" class="card-link text-decoration-none">
+          <div class="card game-card h-100">
+            <img
+              src="https://placehold.co/400x200/e74c3c/ffffff?text=Racing+Game"
+              class="card-img-top img-fluid"
+              alt="Racing Game"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Speed Legends</h5>
+              <div class="btn btn-primary btn-play">Play</div>
+            </div>
+          </div>
+        </a>
+      </div>
 
-        function toggleTheme() {
-            const newTheme = document.body.classList.contains("bg-light") ? "dark" : "light";
-            setTheme(newTheme);
-        }
+      <div class="col-12 col-sm-6 col-md-4">
+        <a href="Page/game-adventure.html" class="card-link text-decoration-none">
+          <div class="card game-card h-100">
+            <img
+              src="https://placehold.co/400x200/3498db/ffffff?text=Adventure+Game"
+              class="card-img-top img-fluid"
+              alt="Adventure Game"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Epic Quest</h5>
+              <div class="btn btn-primary btn-play">Play</div>
+            </div>
+          </div>
+        </a>
+      </div>
 
-        function setTheme(theme) {
-            document.body.classList.remove("bg-light", "text-dark", "bg-dark", "text-light");
-            const footer = document.getElementById("footer");
+      <div class="col-12 col-sm-6 col-md-4">
+        <a href="Page/game-strategy.html" class="card-link text-decoration-none">
+          <div class="card game-card h-100">
+            <img
+              src="https://placehold.co/400x200/f1c40f/ffffff?text=Strategy+Game"
+              class="card-img-top img-fluid"
+              alt="Strategy Game"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Battle Tactics</h5>
+              <div class="btn btn-primary btn-play">Play</div>
+            </div>
+          </div>
+        </a>
+      </div>
 
-            if (theme === "light") {
-                document.body.classList.add("bg-light", "text-dark");
-                footer.classList.add("bg-light", "text-dark");
-                footer.classList.remove("bg-dark", "text-light");
-            } else {
-                document.body.classList.add("bg-dark", "text-light");
-                footer.classList.add("bg-dark", "text-light");
-                footer.classList.remove("bg-light", "text-dark");
-            }
+      <div class="col-12 col-sm-6 col-md-4">
+        <a href="Page/game-puzzle.html" class="card-link text-decoration-none">
+          <div class="card game-card h-100">
+            <img
+              src="https://placehold.co/400x200/9b59b6/ffffff?text=Puzzle+Game"
+              class="card-img-top img-fluid"
+              alt="Puzzle Game"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Brain Twister</h5>
+              <div class="btn btn-primary btn-play">Play</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 
-            localStorage.setItem("site-theme", theme);
-        }
+  <footer class="pt-4 pb-3 mt-5 bg-dark text-light">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase fw-bold">xGHUB</h5>
+          <p>
+            Play the best online games across all genres. Discover, compete,
+            and have fun!
+          </p>
+        </div>
 
-        // Cookie Consent
-        function acceptCookies() {
-            localStorage.setItem("cookiesAccepted", "true");
-            document.getElementById("cookie-banner").style.display = "none";
-        }
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-decoration-none text-reset">Home</a></li>
+            <li><a href="Page/gamespage.html" class="text-decoration-none text-reset">Games</a></li>
+            <li><a href="Page/categories_page.html" class="text-decoration-none text-reset">Categories</a></li>
+            <li><a href="Page/contact.html" class="text-decoration-none text-reset">Contact</a></li>
+          </ul>
+        </div>
 
-        // Show Cookie Banner if not accepted
-        window.onload = () => {
-            if (!localStorage.getItem("cookiesAccepted")) {
-                document.getElementById("cookie-banner").style.display = "flex";
-            }
-        };
-    </script>
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase fw-bold">Stay Updated</h5>
+          <form
+            onsubmit="event.preventDefault(); alert('Subscribed!');"
+            class="mb-3"
+          >
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email"
+                required
+              />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
+          <button class="btn btn-sm btn-outline-secondary" onclick="toggleTheme()">
+            Toggle Theme
+          </button>
+        </div>
+      </div>
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <hr />
 
-    <!-- Your Custom JS -->
-    <script src="Assets/JS/main.js"></script>
+      <div class="text-center small">&copy; 2025 xGHUB. All rights reserved.</div>
+    </div>
+  </footer>
 
+  <button
+    onclick="alert('How can we help you?')"
+    class="btn btn-primary position-fixed bottom-0 end-0 m-4 shadow rounded-circle"
+    style="width: 56px; height: 56px"
+  >
+    <i class="bi bi-chat-dots-fill"></i>
+  </button>
+
+  <div
+    id="cookie-banner"
+    class="position-fixed bottom-0 start-0 end-0 bg-dark text-white p-3 d-flex justify-content-between align-items-center"
+    style="display: none; z-index: 1050"
+  >
+    <span>We use cookies to improve your experience.</span>
+    <button class="btn btn-sm btn-light" onclick="acceptCookies()">Accept</button>
+  </div>
+
+  <script>
+    // Theme toggling logic
+    const savedTheme = localStorage.getItem('site-theme');
+    if (savedTheme === 'light') setTheme('light');
+    else setTheme('dark');
+
+    function toggleTheme() {
+      const newTheme = document.body.classList.contains('bg-light')
+        ? 'dark'
+        : 'light';
+      setTheme(newTheme);
+    }
+
+    function setTheme(theme) {
+      document.body.classList.remove('bg-light', 'text-dark', 'bg-dark', 'text-light');
+      const footer = document.querySelector('footer');
+
+      if (theme === 'light') {
+        document.body.classList.add('bg-light', 'text-dark');
+        footer.classList.add('bg-light', 'text-dark');
+        footer.classList.remove('bg-dark', 'text-light');
+      } else {
+        document.body.classList.add('bg-dark', 'text-light');
+        footer.classList.add('bg-dark', 'text-light');
+        footer.classList.remove('bg-light', 'text-dark');
+      }
+
+      localStorage.setItem('site-theme', theme);
+    }
+
+    // Cookie consent
+    function acceptCookies() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    window.onload = () => {
+      if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookie-banner').style.display = 'flex';
+      }
+    };
+  </script>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="Assets/JS/main.js"></script>
 </body>
-
 </html>
